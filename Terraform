@@ -19,8 +19,8 @@ Hashiconfigure Language syntax (HCL)
           in starting you need to provide this below code and run "terraform init" then it download all plugin required for your cloud and sync your provider acct with terraform.
           
           provider "aws" {
-              region = "us-west-2"
-              access_key =
+              region      = "us-west-2"
+              access_key  =
     	         secret_key  =
           }
 
