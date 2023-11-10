@@ -1,0 +1,37 @@
+
+
+Provider -: aws , azure , gcp are the providers
+
+terraform init -: used to initialize working directory containing terraform configurations [this command download plugins needed for our providers ]
+
+terraform validate -: it checks weather the configuration sytax is correct or not 
+
+terraform plan -: command is used to understand execution plan for your terraform configuration
+
+terraform apply -: this command used to apply your configure and start creating infrastracture you have mention in terraform files 
+
+Hashiconfigure Language syntax (HCL)
+ 
+  block :- cloud (aws, azure , gcp) madhe nemke aplyala kay create karaychay te apan block madhe 
+  ---------------------------------------
+  sytax -: block-type block-label  
+        
+          in starting you need to provide this below code and run "terraform init" then it download all plugin required for your cloud and sync your provider acct with terraform.
+          
+          provider "aws" {
+            region = "us-west-2"
+          }
+
+      
+          <block-type>  <block-lable>   <block-label> {
+              <identifier> = <expression>
+          }
+
+          resource "aws_instance" "example" {
+            ami           = "ami-0c55b159cbfafe1f0"
+            instance_type = "t2.micro"
+          }
+
+  
+
+
