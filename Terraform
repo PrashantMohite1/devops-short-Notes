@@ -23,7 +23,7 @@ Hashiconfigure Language syntax (HCL)
           }
 
       
-          <block-type>  <block-lable>   <block-label> {
+          <block-type>  <block-lable>   <block-label-name> {
               <identifier> = <expression>
           }
 
